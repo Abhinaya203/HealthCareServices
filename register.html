@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCareServices</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="top">
+      <div>
+        Contact Us +91 96366 20000/+91 63120 20000 | healthcare@service.com
+      </div>
+    </div>
+
+    <div class="logo">
+      <div>
+        <table>
+          <tr>
+            <td width="600px" style="font-size: 50px">
+              <font
+                style="
+                  color: whitesmoke;
+                  font-family: 'Times New Roman', Times, serif;
+                "
+                >Health Care Services</font
+              >
+            </td>
+            <td>
+              <br />
+              <br />
+              <font size="4px">
+                <a href="index.html"><b>HOME</b></a>
+                <a href="about.html"><b>ABOUT US</b></a>
+                <a href="service.html"><b>SERVICES</b></a>
+                <a href="bank.html"><b>BANKS</b></a>
+                <a href="contact.html"><b>CONTACT US</b></a>
+                <a href="register.html"><b>REGISTER</b></a>
+                <a href="feedback.html"><b>FEED BACK</b></a>
+              </font>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br />
+    <br /><br /><br />
+
+    <div id="row-3">
+      <div class="r3-col-1">
+        <p></p>
+      </div>
+      <div class="r3-col-2">
+        <h2 class="title-text">Register Here</h2>
+
+        <input type="text" name="username" placeholder="Username" size="50" />
+        <br /><br />
+        <input
+          type="text"
+          name="mobilenumber"
+          placeholder="mobile number"
+          size="50"
+        />
+        <br /><br />
+
+        <input
+          type="text"
+          name="bloodgroup"
+          placeholder="Blood Group"
+          size="50"
+        />
+        <br /><br />
+
+        <input type="text" name="age" id="" placeholder="Enter Age" size="50" />
+        <br /><br />
+        <input
+          type="text"
+          name="address"
+          id=""
+          placeholder="Enter Address"
+          size="50"
+        />
+        <br /><br />
+        <input type="password" name="" id="" placeholder="password" size="50" />
+        <br /><br />
+
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="re-enter password"
+          size="50"
+        />
+
+        <br /><br />
+        Want to donate organs after death? (Mention the organs you want to
+        donate)
+        <input
+          type="text"
+          name="Y/N"
+          id=""
+          placeholder="Y(organ name)/N"
+          size="60"
+        />
+        <br /><br />
+
+        <input type="submit" value="Register" class="btn-login" /><br /><br />
+        <p>Are you a existing user? <a href="login.html">Login Here</a></p>
+      </div>
+      <div class="r3-col-3">
+        <p></p>
+      </div>
+    </div>
+    <div id="row-4">
+      <p>You are at HealthCareServices website</p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const scriptURL = "<SCRIPT URL>";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
